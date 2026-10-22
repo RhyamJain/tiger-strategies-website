@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tiger Strategies Fund – I</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%230d2b5e%22/%3E%3Ctext x=%2232%22 y=%2242%22 text-anchor=%22middle%22 font-family=%22Helvetica Neue, Helvetica, Arial, sans-serif%22 font-size=%2227%22 font-weight=%22700%22 fill=%22%23ffffff%22 letter-spacing=%220.5%22%3ETS%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="180x180" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="regbar">
+  <div class="wrap">
+    <span>SEBI Registered Category I AIF · Reg. No. IN/AIF1/25-26/1913</span>
+    <span><a href="mailto:funds.tigerstrategies@gmail.com">funds.tigerstrategies@gmail.com</a> · <a href="tel:+918369532916">+91 83695 32916</a></span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#home">
+      <!-- To use a logo image, replace the span below with: <img src="logo.png" alt="" width="42" height="42"> -->
+      <span class="brand-mark" aria-hidden="true">TS</span>
+      <span class="brand-text"><strong>Tiger Strategies Fund – I</strong><small>TIGER STRATEGIES</small></span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#policies">Investors Corner</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HOME -->
+  <div data-page="home" data-title="Home">
+    <section class="hero">
+      <div class="wrap">
+        <h1 tabindex="-1">Backing India's next generation of high-growth businesses</h1>
+        <p>A SEBI-registered Category I Alternative Investment Fund (Venture Capital Fund).</p>
+      </div>
+    </section>
+
+    <dl class="stats">
+      <div><dt>Category</dt><dd>Category I AIF (VCF)</dd></div>
+      <div><dt>Established</dt><dd>December 2025</dd></div>
+      <div><dt>Structure</dt><dd>Close-ended, 10 years</dd></div>
+      <div><dt>Target size</dt><dd>Up to ₹500 crore</dd></div>
+    </dl>
+
+    <h2>What the Fund does</h2>
+    <p>The Fund is sector-agnostic and looks at opportunities in India and overseas. Its focus includes:</p>
+    <div class="cards">
+      <div class="card"><span class="num">01</span><h3>Pre-IPO opportunities</h3><p>Growth-stage companies preparing to list.</p></div>
+      <div class="card"><span class="num">02</span><h3>Qualified institutional placements</h3><p>QIPs by listed companies raising capital.</p></div>
+      <div class="card"><span class="num">03</span><h3>SME and mainboard IPOs</h3><p>Participation in new listings across exchanges.</p></div>
+      <div class="card"><span class="num">04</span><h3>Listed equities</h3><p>Positions in listed businesses with long-term value.</p></div>
+      <div class="card"><span class="num">05</span><h3>Unlisted equities</h3><p>Investments in unlisted companies with long-term growth potential.</p></div>
+    </div>
+
+    <h2>Learn more</h2>
+    <div class="links-row">
+      <a class="link-card" href="#about"><strong>About Us →</strong><span>Fund structure, the investment manager and key terms.</span></a>
+      <a class="link-card" href="#policies"><strong>Investors Corner →</strong><span>Grievance redressal and stewardship disclosures.</span></a>
+      <a class="link-card" href="#contact"><strong>Contact →</strong><span>Fund enquiries and how to reach us.</span></a>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div data-page="about" data-title="About Us" hidden>
+    <header class="page-head">
+      <h1 class="page-title" tabindex="-1">About Us</h1>
+    </header>
+    <p>Tiger Strategies Fund is set up as a trust under the Indian Trusts Act, 1882, and Tiger Strategies Fund – I is its scheme. The Fund's vision is to build a diversified financial services platform with capital raising and strategic advisory.</p>
+
+    <h2>Fund Structure</h2>
+    <div class="table-wrap">
+      <table>
+        <caption>Fund details</caption>
+        <tbody>
+          <tr><th scope="row">Fund (AIF)</th><td>Tiger Strategies Fund, a trust under the Indian Trusts Act, 1882</td></tr>
+          <tr><th scope="row">Scheme</th><td>Tiger Strategies Fund – I</td></tr>
+          <tr><th scope="row">Category</th><td>Category I AIF, Venture Capital Fund</td></tr>
+          <tr><th scope="row">SEBI registration no.</th><td>IN/AIF1/25-26/1913</td></tr>
+          <tr><th scope="row">Established</th><td>December 2025</td></tr>
+          <tr><th scope="row">Sponsor</th><td>Aureon Ventures LLP</td></tr>
+          <tr><th scope="row">Investment manager</th><td>Aureon Ventures LLP</td></tr>
+          <tr><th scope="row">Designated partners of the sponsor and manager</th><td>Mr. Sanjay P. Jain, Mr. Jignesh Thobhani, Mr. Manoj Agarwal</td></tr>
+          <tr><th scope="row">Key team members</th><td>Mr. Sanjay P. Jain, Mr. Jignesh Thobhani, Mr. Manoj Agarwal, Ms. Nishvi Sanjay Jain (Chief Operating Officer)</td></tr>
+          <tr><th scope="row">Trustee</th><td>Beacon Trusteeship Limited</td></tr>
+          <tr><th scope="row">Compliance officer</th><td>Mr. Sanjay P. Jain</td></tr>
+          <tr><th scope="row">Offer</th><td>Private placement only, to eligible investors</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>About the Investment Manager</h2>
+    <p>Aureon Ventures LLP is a limited liability partnership incorporated under the Limited Liability Partnership Act, 2008. It acts as both sponsor and investment manager of the Fund.</p>
+    <p>Aureon Ventures LLP is a first-time investment manager.</p>
+  </div>
+
+  <!-- TEAM -->
+  <div data-page="team" data-title="Team" hidden>
+    <header class="page-head">
+      <h1 class="page-title" tabindex="-1">Team</h1>
+    </header>
+    <div class="members">
+      <figure class="member">
+        <!-- To use a real photo, replace the div below with: <img src="photo.jpg" alt="Mr. Sanjay P. Jain"> -->
+        <div class="photo" role="img" aria-label="Photo of Mr. Sanjay P. Jain to be added">SJ</div>
+        <figcaption><strong>Mr. Sanjay P. Jain</strong><span>Designated Partner</span></figcaption>
+      </figure>
+      <figure class="member">
+        <!-- To use a real photo, replace the div below with: <img src="photo.jpg" alt="Mr. Jignesh Thobhani"> -->
+        <div class="photo" role="img" aria-label="Photo of Mr. Jignesh Thobhani to be added">JT</div>
+        <figcaption><strong>Mr. Jignesh Thobhani</strong><span>Designated Partner</span></figcaption>
+      </figure>
+      <figure class="member">
+        <!-- To use a real photo, replace the div below with: <img src="photo.jpg" alt="Mr. Manoj Agarwal"> -->
+        <div class="photo" role="img" aria-label="Photo of Mr. Manoj Agarwal to be added">MA</div>
+        <figcaption><strong>Mr. Manoj Agarwal</strong><span>Designated Partner</span></figcaption>
+      </figure>
+      <figure class="member">
+        <!-- To use a real photo, replace the div below with: <img src="photo.jpg" alt="Ms. Nishvi Sanjay Jain"> -->
+        <div class="photo" role="img" aria-label="Photo of Ms. Nishvi Sanjay Jain to be added">NJ</div>
+        <figcaption><strong>Ms. Nishvi Sanjay Jain</strong><span>Chief Operating Officer</span></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- INVESTORS CORNER -->
+  <div data-page="policies" data-title="Investors Corner" hidden>
+    <header class="page-head">
+      <h1 class="page-title" tabindex="-1">Investors Corner</h1>
+    </header>
+
+    <h2>Stewardship Policy</h2>
+    <div class="table-wrap">
+      <table>
+        <caption>Stewardship Policy documents</caption>
+        <thead><tr><th>Document</th><th>Version</th><th>Approved on</th><th>Download</th></tr></thead>
+        <tbody>
+          <!-- To add a document, copy a row and replace the dashes and link. -->
+          <tr><td>Stewardship Policy (current)</td><td class="pending">—</td><td class="pending">—</td><td class="pending">To be uploaded</td></tr>
+          <tr><td>Previous versions</td><td class="pending">—</td><td class="pending">—</td><td class="pending">None yet</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Voting Disclosures</h2>
+    <div class="table-wrap">
+      <table>
+        <caption>Voting disclosures by financial year</caption>
+        <tbody><tr><td colspan="3" class="empty">No voting disclosures published yet.</td></tr></tbody>
+      </table>
+    </div>
+
+    <h2>Grievance redressal</h2>
+    <p>Write to the Compliance Officer, Mr. Sanjay P. Jain, at <a href="mailto:aureonventuresllp@gmail.com">aureonventuresllp@gmail.com</a>, call <a href="tel:+918369532916">+91 83695 32916</a>, or write to the address on the <a href="#contact">Contact</a> page. Complaints are answered within 30 days of receipt.</p>
+    <p>The Trustee's compliance desk is at <a href="mailto:compliance@beacontrustee.co.in">compliance@beacontrustee.co.in</a>. If your complaint is not resolved, you can register it on the <a href="https://scores.sebi.gov.in" rel="noopener">SEBI SCORES portal</a>.</p>
+  </div>
+
+  <!-- CONTACT -->
+  <div data-page="contact" data-title="Contact" hidden>
+    <header class="page-head">
+      <h1 class="page-title" tabindex="-1">Contact</h1>
+    </header>
+
+    <h2>Fund Enquiries</h2>
+    <dl class="facts">
+      <dt>Email</dt><dd><a href="mailto:funds.tigerstrategies@gmail.com">funds.tigerstrategies@gmail.com</a></dd>
+      <dt>Phone</dt><dd><a href="tel:+918369532916">+91 83695 32916</a></dd>
+    </dl>
+
+    <h2>Sponsor / Investment Manager</h2>
+    <dl class="facts">
+      <dt>Registered and communication address</dt><dd>A-4502, 45th Floor, Plot CS 77,3, One Avighana Park Tower, Mahadeo Palav Marg, Curry Road, Parel, Mumbai, Maharashtra 400 012</dd>
+      <dt>Email</dt><dd><a href="mailto:aureonventuresllp@gmail.com">aureonventuresllp@gmail.com</a></dd>
+    </dl>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div data-page="disclaimer" data-title="Disclaimer" hidden>
+    <header class="page-head">
+      <h1 class="page-title" tabindex="-1">Disclaimer</h1>
+    </header>
+    <p>This website is for information only. It is not an offer, invitation or solicitation to invest in Tiger Strategies Fund – I or any other product.</p>
+    <p>Tiger Strategies Fund – I is registered with SEBI as a Category I Alternative Investment Fund (Venture Capital Fund). SEBI registration does not guarantee the performance of the Fund or the returns to investors. No returns are assured or guaranteed.</p>
+    <p>An investment in the Fund is suitable only for sophisticated investors and private investors who are eligible to invest in Category I AIFs under the AIF Regulations. It needs the financial ability and willingness to stay invested for the whole term, and to accept the high risk and lack of liquidity of an investment of this kind.</p>
+    <p>The Fund is close-ended with a term of 10 years, extendable by up to 2 years subject to the required approvals. In the normal course, no exit option is available to investors until the end of the term.</p>
+    <p>Units can be offered only by private placement, through the Fund's Private Placement Memorandum, to a limited number of eligible investors. The Private Placement Memorandum has not been approved by SEBI or any other regulatory authority. Losses in the Fund are borne by investors. Read the Private Placement Memorandum and consult your own advisers before investing.</p>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="footer-brand"><span class="brand-mark" aria-hidden="true">TS</span><strong>Tiger Strategies Fund – I</strong></div>
+      <p>Category I Alternative Investment Fund (Venture Capital Fund). SEBI registration no. IN/AIF1/25-26/1913.</p>
+      <p>Sponsor and manager: Aureon Ventures LLP, A-4502, 45th Floor, Plot CS 77,3, One Avighana Park Tower, Mahadeo Palav Marg, Curry Road, Parel, Mumbai 400 012. Trustee: Beacon Trusteeship Limited.</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#policies">Investors Corner</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#disclaimer">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:funds.tigerstrategies@gmail.com">funds.tigerstrategies@gmail.com</a></li>
+        <li><a href="tel:+918369532916">+91 83695 32916</a></li>
+        <li><a href="https://scores.sebi.gov.in" rel="noopener">SEBI SCORES</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap">Investments are subject to market risk. SEBI registration does not guarantee performance or returns. Read the <a href="#disclaimer">Disclaimer</a>.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
